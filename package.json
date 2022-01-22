@@ -14,7 +14,8 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.5",
     "three": "^0.133.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "homepage":"https://dacerron.github.io/r3fdoodles/" 
   },
   "scripts": {
     "start": "react-scripts start",
