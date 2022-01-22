@@ -16,7 +16,7 @@
     "three": "^0.133.1",
     "web-vitals": "^1.0.1"
   },
-  "homepage":"https://dacerron.github.io/r3fdoodles/",
+  "homepage": "https://dacerron.github.io/r3fdoodles/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
