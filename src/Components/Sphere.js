@@ -1,7 +1,6 @@
 import { useSpring, useSpringRef, a } from '@react-spring/three'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber';
-import { useEffect } from 'react/cjs/react.development';
 
 export const Sphere = ({start, position, color, index}) => {
     const [rise, setRise] = useState(false)
