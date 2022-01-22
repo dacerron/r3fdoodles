@@ -13,9 +13,6 @@ const AnimatedSphere = animated(Sphere)
 export const AnimatedSpheres = ({rise}) => {
     const { sphereShouldRise } = useSpring( {sphereShouldRise: rise? spheres.length : -1, config: {duration: 1000} })
 
-    useFrame(() => {
-        console.log(sphereShouldRise)
-    })
     return (<>
         {spheres.map((sphere, index) => {
                 return <AnimatedSphere start={sphereShouldRise} color={sphere.color} key={sphere.key} position={sphere.position} index={index}></AnimatedSphere>

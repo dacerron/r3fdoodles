@@ -20,9 +20,6 @@ export const Sphere = ({start, position, color, index}) => {
         } 
         zPositionOffset += 0.01
         sphereRef.current.position.z = position[2] + zPositionOffset
-        if(sphereRef.current.position.z > 5) {
-            
-        }
     })
     useEffect(() => {
         if(rise === true) {
