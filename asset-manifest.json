@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/r3fdoodles/static/css/main.6bea527f.chunk.css",
-    "main.js": "/r3fdoodles/static/js/main.a004174c.chunk.js",
-    "main.js.map": "/r3fdoodles/static/js/main.a004174c.chunk.js.map",
+    "main.js": "/r3fdoodles/static/js/main.196b5d15.chunk.js",
+    "main.js.map": "/r3fdoodles/static/js/main.196b5d15.chunk.js.map",
     "runtime-main.js": "/r3fdoodles/static/js/runtime-main.3a599908.js",
     "runtime-main.js.map": "/r3fdoodles/static/js/runtime-main.3a599908.js.map",
-    "static/js/2.70714b82.chunk.js": "/r3fdoodles/static/js/2.70714b82.chunk.js",
-    "static/js/2.70714b82.chunk.js.map": "/r3fdoodles/static/js/2.70714b82.chunk.js.map",
+    "static/js/2.3326b3b3.chunk.js": "/r3fdoodles/static/js/2.3326b3b3.chunk.js",
+    "static/js/2.3326b3b3.chunk.js.map": "/r3fdoodles/static/js/2.3326b3b3.chunk.js.map",
     "index.html": "/r3fdoodles/index.html",
     "static/css/main.6bea527f.chunk.css.map": "/r3fdoodles/static/css/main.6bea527f.chunk.css.map",
-    "static/js/2.70714b82.chunk.js.LICENSE.txt": "/r3fdoodles/static/js/2.70714b82.chunk.js.LICENSE.txt"
+    "static/js/2.3326b3b3.chunk.js.LICENSE.txt": "/r3fdoodles/static/js/2.3326b3b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3a599908.js",
-    "static/js/2.70714b82.chunk.js",
+    "static/js/2.3326b3b3.chunk.js",
     "static/css/main.6bea527f.chunk.css",
-    "static/js/main.a004174c.chunk.js"
+    "static/js/main.196b5d15.chunk.js"
   ]
 }
