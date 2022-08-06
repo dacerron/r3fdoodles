@@ -12,7 +12,7 @@ export const Controls = () => {
   })
   return (
     <orbitControls
-      maxPolarAngle={Math.PI / 1}
+      maxPolarAngle={Math.PI}
       minPolarAngle={Math.PI / 5}
       ref={orbitRef}
       args={[camera, gl.domElement]}

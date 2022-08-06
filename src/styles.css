@@ -1,0 +1,15 @@
+.container, canvas {
+    background-color: black;
+    position: absolute
+}
+
+.container {
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    padding-left: 2em;
+    padding-top: 2em;
+}

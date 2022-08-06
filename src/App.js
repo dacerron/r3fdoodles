@@ -1,34 +1,42 @@
-import { Canvas, extend, useThree, useFrame } from '@react-three/fiber'
-import { useState, useEffect } from 'react'
-import { useSpring, useChain, animated } from '@react-spring/three'
-import { useControls } from 'leva'
+import { Canvas, useThree, useFrame } from '@react-three/fiber'
+import React, { useState, useRef } from 'react'
 import * as THREE from "three"
 import { Controls } from './Components/Controls.js'
-import { Plane } from './Components/Plane.js'
-import { AnimatedSpheres } from './Components/AnimatedSpheres.js'
+import Scene from './Components/Scene.jsx'
+import About from './Components/About.jsx'
+import Projects from './Components/Projects.jsx'
+import "./styles.css"
 
+const SphereContext = React.createContext({ values: null })
 
 function App() {
-    const [rise, setRise] = useState(false)
-    const { fogMin, fogMax, num } = useControls({ fogMin: 0, fogMax: 30, num: 1 })
+    const [activePage, setActivePage] = useState([0, 0,])
+    const menuFunctions = [function () {
+        setActivePage([!activePage[0], activePage[1], activePage[2]])
+    }, function () {
+        setActivePage([activePage[0], !activePage[1], activePage[2]])
+    }]
     
-    return ( <>
-    <button type="button" onClick={() => setRise(!rise)}>toggle</button>
-    <Canvas camera = {{ position: [0, 0, 5] } }
-        onCreated = {
-            ({ gl }) => {
-                gl.shadowMap.enabled = true
-                gl.shadowMap.type = THREE.PCFSoftShadowMap
+    return (<div style={{ width: "100%", height: "100%" }}>
+        <Canvas camera={{ position: [5, 5, -2] }}
+            onCreated={
+                ({ gl }) => {
+                    gl.shadowMap.enabled = true
+                    gl.shadowMap.type = THREE.PCFSoftShadowMap
                 }}>
-        <fog attach="fog" args={["white", fogMin, fogMax]}/> 
-        <Controls/> 
-        <AnimatedSpheres rise={rise}/>
-        <Plane/>
-        <ambientLight/>
-        <directionalLight></directionalLight> 
+            <SphereContext.Provider value={{values: activePage}}>
+                <Scene menuFunctions={menuFunctions} />
+            </SphereContext.Provider>
+            <ambientLight />
+            <directionalLight></directionalLight>
         </Canvas>
-        </>
+        <div className={"navbar"}>
+            <Projects menuFunc={menuFunctions[1]}></Projects>
+            
+            <About menuFunc={menuFunctions[0]}></About>
+        </div>
+    </div>
     );
 }
 
-export default App;
+export {App, SphereContext};
