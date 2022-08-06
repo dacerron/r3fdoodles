@@ -1,6 +1,6 @@
-import { useSpring, useSpringRef, a } from '@react-spring/three'
+import { useSpring, useSpringRef, a, } from '@react-spring/three'
 import * as THREE from 'three'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber';
 
 
