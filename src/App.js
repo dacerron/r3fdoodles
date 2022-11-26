@@ -10,11 +10,11 @@ import "./styles.css"
 const SphereContext = React.createContext({ values: null })
 
 function App() {
-    const [activePage, setActivePage] = useState([0, 0,])
+    const [activePage, setActivePage] = useState([0, 0, 0])
     const menuFunctions = [function () {
-        setActivePage([!activePage[0], activePage[1], activePage[2]])
+        setActivePage([1, 0, 0])
     }, function () {
-        setActivePage([activePage[0], !activePage[1], activePage[2]])
+        setActivePage([0, 1, 0])
     }]
     
     return (<div style={{ width: "100%", height: "100%" }}>
@@ -22,7 +22,7 @@ function App() {
             onCreated={
                 ({ gl }) => {
                     gl.shadowMap.enabled = true
-                    gl.shadowMap.type = THREE.PCFSoftShadowMap
+                    gl.shadowMap.type = THREE.VSMShadowMap
                 }}>
             <SphereContext.Provider value={{values: activePage}}>
                 <Scene menuFunctions={menuFunctions} />
@@ -30,7 +30,7 @@ function App() {
             <ambientLight />
             <directionalLight></directionalLight>
         </Canvas>
-        <div className={"navbar"}>
+        <div className={"navbar"} onPointerLeave={() => {(activePage[0] || activePage [1] || activePage[2]) && setActivePage([0,0,0]) }} >
             <Projects menuFunc={menuFunctions[1]}></Projects>
             
             <About menuFunc={menuFunctions[0]}></About>

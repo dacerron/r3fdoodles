@@ -13,3 +13,10 @@
     padding-left: 2em;
     padding-top: 2em;
 }
+
+.navTab {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 3vh;
+    padding: 1vh;
+}

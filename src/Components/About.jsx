@@ -2,7 +2,7 @@ import "./about.css"
 
 function About({menuFunc}){
     return (<>
-    <div className={"aboutTab"} onPointerEnter={menuFunc} onPointerLeave={menuFunc}><h1>About</h1></div>
+    <div className={"aboutTab navTab"} onPointerEnter={() => {console.log('about enter');menuFunc()}}>About</div>
     </>)
 }
 
