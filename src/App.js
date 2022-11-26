@@ -23,6 +23,7 @@ function App() {
                 ({ gl }) => {
                     gl.shadowMap.enabled = true
                     gl.shadowMap.type = THREE.VSMShadowMap
+                    
                 }}>
             <SphereContext.Provider value={{values: activePage}}>
                 <Scene menuFunctions={menuFunctions} />
@@ -34,6 +35,10 @@ function App() {
             <Projects menuFunc={menuFunctions[1]}></Projects>
             
             <About menuFunc={menuFunctions[0]}></About>
+        </div>
+        <div className={"infoPaneContainer"}>
+                {activePage[0]? <div className={"projectsPane infoPane"}></div>: null}
+                {activePage[1]? <div className={"aboutPane infoPane"}></div>: null}
         </div>
     </div>
     );
