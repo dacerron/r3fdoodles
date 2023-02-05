@@ -8,7 +8,7 @@ const spheres = []
 const numSpheres = 5
 for (let i = 0; i < Math.floor(numSpheres); i++) {
     let color = new THREE.Color(Math.random(), Math.random(), Math.random());
-    spheres.push({ color: color, position: [-1.5, 0.5, i * 4], key: i, start: false })
+    spheres.push({ color: color, position: [-1.5, 0.5, 4 + (-i * 4)], key: i, start: false })
 }
 const AnimatedSphere = animated(Sphere)
 export const AnimatedSpheres = ({ menuFunctions }) => {

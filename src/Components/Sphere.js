@@ -38,7 +38,7 @@ export const Sphere = ({ start, position, color, index, menuFunction, shouldRise
             position-y={props.yposition}
             //onPointerEnter={()=> {setRise(true)}}
             //onPointerOut={() => {setRise(false)}}
-            //onPointerDown={() => {menuFunction()}}
+            onPointerDown={() => {menuFunction()}}
             >
             <sphereBufferGeometry attach="geometry"></sphereBufferGeometry>
             <a.meshPhysicalMaterial attach="material" color={props.color}></a.meshPhysicalMaterial>

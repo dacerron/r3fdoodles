@@ -8,8 +8,7 @@ import { Plane } from './Plane'
 
 function Scene( {menuFunctions}) {
     const group = useRef();
-    /*
-    const rotationEuler = new THREE.Euler(0, 0, 0);
+    const rotationEuler = new THREE.Euler(0, Math.PI/2, 0);
     const rotationQuaternion = new THREE.Quaternion(0, 0, 0, 0);
     const { viewport } = useThree();
 
@@ -21,9 +20,8 @@ function Scene( {menuFunctions}) {
         rotationQuaternion.setFromEuler(rotationEuler);
 
         group.current.quaternion.slerp(rotationQuaternion, 0.1);
-    });*/
+    });
     return <group ref={group}>
-        <OrbitControls></OrbitControls>
         <pointLight position={[15, 15, 15]} />
         <AnimatedSpheres menuFunctions={menuFunctions} />
         <Plane />

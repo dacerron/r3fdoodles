@@ -11,9 +11,12 @@ const SphereContext = React.createContext({ values: null })
 
 function App() {
     const [activePage, setActivePage] = useState([0, 0, 0])
+    const [pane, setPane] = useState(false);
     const menuFunctions = [function () {
+        setPane(true);
         setActivePage([1, 0, 0])
     }, function () {
+        setPane(true);
         setActivePage([0, 1, 0])
     }]
     
@@ -31,17 +34,17 @@ function App() {
             <ambientLight />
             <directionalLight></directionalLight>
         </Canvas>
-        <div className={"navbar"} onPointerLeave={() => {(activePage[0] || activePage [1] || activePage[2]) && setActivePage([0,0,0]) }} >
-            <Projects menuFunc={menuFunctions[1]}></Projects>
+        <div className={"navbar"}  >
+            <Projects menuFunc={menuFunctions[0]}></Projects>
             
-            <About menuFunc={menuFunctions[0]}></About>
+            <About menuFunc={menuFunctions[1]}></About>
         </div>
-        <div className={"infoPaneContainer"}>
-                {activePage[0]? <div className={"projectsPane infoPane"}></div>: null}
-                {activePage[1]? <div className={"aboutPane infoPane"}></div>: null}
+        <div className={(pane? "infoPaneContainerExpanded" : "infoPaneContainer")} >
+                {activePage[0]? <div className={"projectsPane infoPane"}>some info about projects</div>: null}
+                {activePage[1]? <div className={"aboutPane infoPane"}>some info about me</div>: null}
         </div>
     </div>
     );
 }
-
+//close pane: onPointerLeave={() => {(activePage[0] || activePage[1] || activePage[2]) && setActivePage([0,0,0]) }}
 export {App, SphereContext};
