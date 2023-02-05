@@ -1,12 +1,6 @@
-import { useEffect } from 'react'
-import * as THREE from 'three'
-import { useThree, useFrame } from '@react-three/fiber'
 import { Reflector } from '@react-three/drei'
 
-
-let cubeGeom, mirrorCubeCamera, mirrorCubeMaterial, mirrorCube, cubeRenderTarget
 export const Plane = () => {
-  const { scene, gl } = useThree()
   /*
   useEffect(() => {
     cubeRenderTarget = new THREE.WebGLCubeRenderTarget(1024, { format: THREE.RGBFormat, generateMipmaps: true, minFilter: THREE.LinearMipmapLinearFilter })
@@ -31,31 +25,11 @@ export const Plane = () => {
   })*/
   return (
     <mesh
-      rotation={[-Math.PI / 2, 0, 0]}
-      position={[0, -0.5, 0]}
-      receiveShadow>
-      <Reflector
-        args={[256, 256]} // PlaneBufferGeometry arguments
-        resolution={4096} // Off-buffer resolution, lower=faster, higher=better quality
-        mirror={1} // Mirror environment, 0 = texture colors, 1 = pick up env colors
-        mixBlur={0} // How much blur mixes with surface roughness (default = 0), note that this can affect performance
-        mixStrength={0} // Strength of the reflections
-        depthScale={0} // Scale the depth factor (0 = no depth, default = 0)
-        minDepthThreshold={0} // Lower edge for the depthTexture interpolation (default = 0)
-        maxDepthThreshold={0} // Upper edge for the depthTexture interpolation (default = 0)
-        depthToBlurRatioBias={0.25} // Adds a bias factor to the depthTexture before calculating the blur amount [blurFactor = blurTexture * (depthTexture + bias)]. It accepts values between 0 and 1, default is 0.25. An amount > 0 of bias makes sure that the blurTexture is not too sharp because of the multiplication with the depthTexture
-        distortion={0.5} // Amount of distortion based on the distortionMap texture
-        debug={2} /* Depending on the assigned value, one of the following channels is shown:
-    0 = no debug
-    1 = depth channel
-    2 = base channel
-    3 = distortion channel
-    4 = lod channel (based on the roughness)
-  */
-      >
-        {(Material, props) => <Material {...props} />}
+      position={[-1, -0.5, 2]}>
+      <Reflector resolution={2048} args={[10, 10]} mirror={1} mixStrength={0.8} rotation={[-Math.PI / 2, 0, Math.PI / 2]}>
+        {(Material, props) => <Material color="#a0a0a0" metalness={0.5} normalScale={[1, 1]} {...props} />}
       </Reflector>
-    </mesh>
+    </mesh >
   )
 }
 
