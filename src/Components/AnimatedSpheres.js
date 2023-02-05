@@ -1,5 +1,4 @@
-import { extend, useFrame } from '@react-three/fiber'
-import { useSpring, animated } from '@react-spring/three'
+import { animated } from '@react-spring/three'
 import { Sphere } from './Sphere.js'
 import React from 'react'
 import * as THREE from 'three'
