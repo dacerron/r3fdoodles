@@ -17,36 +17,69 @@
 .navTab {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 8vh;
+    font-size: 7vh;
     padding: 3vh;
     cursor: pointer;
 }
 
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 9vh;
+    padding: 3vh;
+    color: aliceblue;
+}
+
+.contact {
+    font-size: 2em;
+    background-color: rgba(54, 54, 54, 0.5);
+    position: fixed;
+    top: 55vh;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.6em;
+    margin-left: 3vw;
+    font-weight: 300;
+}
+.madeWith {
+    font-size: 1.6em;
+    position: fixed;
+    top: 85vh;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.6em;
+    font-weight: 300;
+}
+
 .infoPaneContainer {
-    background-color: rgba(54, 54, 54, 0.1);
+    background-color: rgba(54, 54, 54, 0.5);
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 0vw;
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
+    padding: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .infoPaneContainerExpanded {
-    background-color: rgba(54, 54, 54, 0.1);
+    background-color: rgba(24, 24, 24, 0.5);
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 40vw;
-    padding: 2em;
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
+    padding: 1em 2em;
+    overflow-y: scroll;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .infoPane {
@@ -56,9 +89,27 @@
 }
 
 a:link {
-    color: aliceblue;
+    color: rgb(132, 183, 228);
 }
 
 a:visited {
-    color: mediumslateblue;
+    color: rgb(71, 92, 151);
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
