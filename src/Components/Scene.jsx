@@ -21,7 +21,7 @@ function Scene( {menuFunctions}) {
 
         group.current.quaternion.slerp(rotationQuaternion, 0.1);
     });
-    return <group ref={group}>
+    return <group ref={group} position={[0,0,-3]}>
         <pointLight position={[15, 15, 15]} />
         <AnimatedSpheres menuFunctions={menuFunctions} />
         <Plane />
