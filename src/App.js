@@ -46,7 +46,7 @@ function App() {
             <Projects menuFunc={menuFunctions[0]}></Projects>
         </div>
         <div className={"contact"}><div style={{paddingBottom: "0.6em"}}>dacerron@gmail.com</div>
-        <div style={{display:"flex", justifyContent: "space-around"}}><a href="www.linkedin.com/in/dante-cerron-8b2138115
+        <div style={{display:"flex", justifyContent: "space-around"}}><a href="https://linkedin.com/in/dante-cerron-8b2138115
 "><img src={linkedinLogo} style={{height: "3em"}}></img></a>
         <a href="https://github.com/dacerron"><img src={githubLogo} style={{height: "3em"}}></img></a></div></div>
         <div className={"madeWith"}><em> Background made with <a href="https://github.com/pmndrs/react-three-fiber">react three fiber</a></em></div>
