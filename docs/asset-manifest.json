@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/r3fdoodles/static/css/main.ccc974b8.chunk.css",
-    "main.js": "/r3fdoodles/static/js/main.2b5a3abd.chunk.js",
-    "main.js.map": "/r3fdoodles/static/js/main.2b5a3abd.chunk.js.map",
-    "runtime-main.js": "/r3fdoodles/static/js/runtime-main.ec0b7979.js",
-    "runtime-main.js.map": "/r3fdoodles/static/js/runtime-main.ec0b7979.js.map",
-    "static/js/2.20e8f4e1.chunk.js": "/r3fdoodles/static/js/2.20e8f4e1.chunk.js",
-    "static/js/2.20e8f4e1.chunk.js.map": "/r3fdoodles/static/js/2.20e8f4e1.chunk.js.map",
+    "main.css": "/r3fdoodles/static/css/main.847833a6.css",
+    "main.js": "/r3fdoodles/static/js/main.ea7ca38d.js",
+    "static/media/cropped-image.png": "/r3fdoodles/static/media/cropped-image.34081ac7ffc1f92e6ada.png",
+    "static/media/github-mark-white.svg": "/r3fdoodles/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/r3fdoodles/index.html",
-    "static/css/main.ccc974b8.chunk.css.map": "/r3fdoodles/static/css/main.ccc974b8.chunk.css.map",
-    "static/js/2.20e8f4e1.chunk.js.LICENSE.txt": "/r3fdoodles/static/js/2.20e8f4e1.chunk.js.LICENSE.txt"
+    "static/media/forward-svgrepo-com.svg": "/r3fdoodles/static/media/forward-svgrepo-com.2678a4be1a8d8df4e7ab491e28dcb146.svg",
+    "main.847833a6.css.map": "/r3fdoodles/static/css/main.847833a6.css.map",
+    "main.ea7ca38d.js.map": "/r3fdoodles/static/js/main.ea7ca38d.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec0b7979.js",
-    "static/js/2.20e8f4e1.chunk.js",
-    "static/css/main.ccc974b8.chunk.css",
-    "static/js/main.2b5a3abd.chunk.js"
+    "static/css/main.847833a6.css",
+    "static/js/main.ea7ca38d.js"
   ]
 }
