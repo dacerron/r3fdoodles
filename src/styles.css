@@ -9,24 +9,43 @@
 
 .navbar {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     top:0;
     padding-left: 2em;
     padding-top: 2em;
+    pointer-events: none;
 }
 
 .navTab {
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 7vh;
-    padding: 3vh;
+    font-weight: 200;
+    font-size: 3em;
+    padding: 3vh 2vh;
     cursor: pointer;
+    color:aliceblue;
+    pointer-events: all;
+}
+
+.navTabSelected {
+    background-color: alice-blue;
+    color: black;
+    background-color: #f0f8ff88;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    padding: 3vh 2vh;
+    cursor: pointer;
+    pointer-events: all;
 }
 
 .name {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 9vh;
-    padding: 3vh;
+    padding: 0vh;
     color: aliceblue;
 }
 
@@ -52,6 +71,7 @@
 }
 
 .infoPaneContainer {
+    color: aliceblue;
     background-color: rgba(54, 54, 54, 0.5);
     position: fixed;
     top: 0;

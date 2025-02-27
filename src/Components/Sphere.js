@@ -10,7 +10,7 @@ export const Sphere = ({ start, position, color, index, menuFunction, shouldRise
     const springRef = useSpringRef()
     let tempVector = new THREE.Vector3();
     const props = useSpring(
-        { yposition: rise ? 1.5 : position[1], color: color, config: { duration: 200 } }
+        { yposition: rise ? 1 : position[1], color: color, config: { duration: 200 } }
     )
 
     const sphereRef = useRef();
@@ -36,11 +36,12 @@ export const Sphere = ({ start, position, color, index, menuFunction, shouldRise
             ref={sphereRef}
             position-x={position[0]}
             position-y={props.yposition}
-            //onPointerEnter={()=> {setRise(true)}}
+            //onPointerEnter={()=> {menuFunction()}}
             //onPointerOut={() => {setRise(false)}}
             onPointerDown={() => {menuFunction()}}
+            scale={0.75}
             >
-            <sphereBufferGeometry attach="geometry"></sphereBufferGeometry>
+            <sphereGeometry attach="geometry"></sphereGeometry>
             <a.meshPhysicalMaterial attach="material" color={props.color}></a.meshPhysicalMaterial>
         </a.mesh>
     )
