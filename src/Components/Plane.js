@@ -25,7 +25,7 @@ export const Plane = () => {
   })*/
   return (
     <mesh
-      position={[-1, -0.5, 2]}>
+      position={[-1, -0.5, 0.5]}>
       <Reflector resolution={2048} args={[10, 10]} mirror={1} mixStrength={0.8} rotation={[-Math.PI / 2, 0, Math.PI / 2]}>
         {(Material, props) => <Material color="#a0a0a0" metalness={0.5} normalScale={[1, 1]} {...props} />}
       </Reflector>

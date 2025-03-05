@@ -6,9 +6,12 @@ import {SphereContext} from '../App'
 
 const spheres = []
 const numSpheres = 5
+
+const sphereColors = ["#ff4dc2", "#8dd16a", "#4dbccd"]
 for (let i = 0; i < Math.floor(numSpheres); i++) {
-    let color = new THREE.Color(Math.random(), Math.random(), Math.random());
-    spheres.push({ color: color, position: [-1.5, 0.5, 4 + (-i * 4)], key: i, start: false })
+    //let color = new THREE.Color(Math.random(), Math.random(), Math.random());
+    let color = new THREE.Color(sphereColors[i]);
+    spheres.push({ color: color, position: [-1.3, 0.27, 4 + (-i * 2.75)], key: i, start: false })
 }
 const AnimatedSphere = animated(Sphere)
 export const AnimatedSpheres = ({ menuFunctions }) => {
