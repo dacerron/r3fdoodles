@@ -23,6 +23,8 @@ import reactlogo from './physics.png'
 import unitylogo from './unity.png'
 import postgreslogo from './postgre.png'
 import dockerlogo from './docker.png'
+import threejslogo from './threejs.svg'
+import csslogo from './csslogo.png'
 
 const SphereContext = React.createContext({ values: null })
 
@@ -82,12 +84,15 @@ function App() {
                 </div>
                 <div className={"paneRightColumn"}>
                     <div className={"logoContainer"}>
-                        <img src={htmllogo} className={'tech-logo'} style={{gridColumn: '1 / span 1', gridRow: '1 / span 1'}}></img>
-                        <img src={reactlogo} className={'tech-logo'} style={{gridColumn: '3 / span 1', gridRow: '1 / span 1' }}></img>
-                        <img src={nodejslogo} className={'tech-logo'} style={{gridColumn: '2 / span 1', gridRow: '2 / span 1'}}></img>
-                        <img src={unitylogo} className={'tech-logo'} style={{gridColumn: '1 / span 1', gridRow: '3 / span 1'}}></img>
-                        <img src={postgreslogo} className={'tech-logo'} style={{gridColumn: '3 / span 1', gridRow: '3 / span 1'}}></img>
-                        <img src={dockerlogo} className={'tech-logo'} style={{gridColumn: '2 / span 1', gridRow: '4 / span 1'}}></img>
+                        <img title={"HTML5"} src={htmllogo} className={'tech-logo'} style={{gridColumn: '1 / span 1', gridRow: '1 / span 1'}}></img>
+                        <img title={"ReactJS"} src={reactlogo} className={'tech-logo'} style={{gridColumn: '3 / span 1', gridRow: '1 / span 1' }}></img>
+                        <img title={"NodeJS"} src={nodejslogo} className={'tech-logo'} style={{gridColumn: '2 / span 1', gridRow: '2 / span 1'}}></img>
+                        <img title={"CSS"} src={csslogo} className={'tech-logo'} style={{gridColumn: '1 / span 1', gridRow: '3 / span 1'}}></img>
+                        <img title={"Unity Engine"} src={unitylogo} className={'tech-logo'} style={{gridColumn: '3 / span 1', gridRow: '3 / span 1'}}></img>
+                        <img title={"THREE.js"} src={threejslogo} className={'tech-logo'} style={{gridColumn: '2 / span 1', gridRow: '4 / span 1'}}></img>
+                        <img title={"Postgres"} src={postgreslogo} className={'tech-logo'} style={{gridColumn: '1 / span 1', gridRow: '5 / span 1'}}></img>
+                        <img title={"PHP"} src={phplogo} className={'tech-logo'} style={{gridColumn: '3 / span 1', gridRow: '5 / span 1'}}></img>
+                        <img title={"Docker"} src={dockerlogo} className={'tech-logo'} style={{gridColumn: '2 / span 1', gridRow: '6 / span 1'}}></img>
                     </div>
                     <span>logos by <a href="www.flaticon.com"></a>Flaticon - Freepik</span>
                 </div>
