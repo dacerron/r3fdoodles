@@ -117,6 +117,7 @@
 }
 
 .paneContainer {
+    padding: 0em 2em;
     display: flex;
     flex-direction: column;
     gap: 5em;
@@ -131,9 +132,10 @@
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: 100;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .project-container {
