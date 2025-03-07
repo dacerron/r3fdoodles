@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/r3fdoodles/static/css/main.847833a6.css",
-    "main.js": "/r3fdoodles/static/js/main.ea7ca38d.js",
+    "main.css": "/r3fdoodles/static/css/main.732b27f1.css",
+    "main.js": "/r3fdoodles/static/js/main.ff088acb.js",
+    "static/media/fossa.webp": "/r3fdoodles/static/media/fossa.974036be7b4873322d77.webp",
+    "static/media/3dmet.webp": "/r3fdoodles/static/media/3dmet.43754c3871a2b15a4efa.webp",
+    "static/media/moa.webp": "/r3fdoodles/static/media/moa.3c6dc06b31372b6eda6a.webp",
+    "static/media/moot.webp": "/r3fdoodles/static/media/moot.21ad7eb1e0380152e17f.webp",
     "static/media/cropped-image.png": "/r3fdoodles/static/media/cropped-image.34081ac7ffc1f92e6ada.png",
+    "static/media/postgre.png": "/r3fdoodles/static/media/postgre.a7fa39912c91e079e90b.png",
+    "static/media/physics.png": "/r3fdoodles/static/media/physics.07d9e407d4e491c548d5.png",
+    "static/media/nodejs.png": "/r3fdoodles/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/php.png": "/r3fdoodles/static/media/php.c67d24b47808dc6611ed.png",
+    "static/media/unity.png": "/r3fdoodles/static/media/unity.43a9b85934639cd3cbf0.png",
+    "static/media/docker.png": "/r3fdoodles/static/media/docker.c1f953a3ead577c05d04.png",
     "static/media/github-mark-white.svg": "/r3fdoodles/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/r3fdoodles/index.html",
-    "static/media/forward-svgrepo-com.svg": "/r3fdoodles/static/media/forward-svgrepo-com.2678a4be1a8d8df4e7ab491e28dcb146.svg",
-    "main.847833a6.css.map": "/r3fdoodles/static/css/main.847833a6.css.map",
-    "main.ea7ca38d.js.map": "/r3fdoodles/static/js/main.ea7ca38d.js.map"
+    "static/media/chevron-right.svg": "/r3fdoodles/static/media/chevron-right.28cf2c4446999cd29f96de12f6eac0f5.svg",
+    "main.732b27f1.css.map": "/r3fdoodles/static/css/main.732b27f1.css.map",
+    "main.ff088acb.js.map": "/r3fdoodles/static/js/main.ff088acb.js.map"
   },
   "entrypoints": [
-    "static/css/main.847833a6.css",
-    "static/js/main.ea7ca38d.js"
+    "static/css/main.732b27f1.css",
+    "static/js/main.ff088acb.js"
   ]
 }
