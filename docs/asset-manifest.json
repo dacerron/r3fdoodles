@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/r3fdoodles/static/css/main.98a2e9f6.css",
+    "main.css": "/r3fdoodles/static/css/main.d32fc179.css",
     "main.js": "/r3fdoodles/static/js/main.6ba975d0.js",
     "static/media/fossa.webp": "/r3fdoodles/static/media/fossa.974036be7b4873322d77.webp",
     "static/media/3dmet.webp": "/r3fdoodles/static/media/3dmet.43754c3871a2b15a4efa.webp",
@@ -18,11 +18,11 @@
     "static/media/github-mark-white.svg": "/r3fdoodles/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/r3fdoodles/index.html",
     "static/media/chevron-right.svg": "/r3fdoodles/static/media/chevron-right.28cf2c4446999cd29f96de12f6eac0f5.svg",
-    "main.98a2e9f6.css.map": "/r3fdoodles/static/css/main.98a2e9f6.css.map",
+    "main.d32fc179.css.map": "/r3fdoodles/static/css/main.d32fc179.css.map",
     "main.6ba975d0.js.map": "/r3fdoodles/static/js/main.6ba975d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.98a2e9f6.css",
+    "static/css/main.d32fc179.css",
     "static/js/main.6ba975d0.js"
   ]
 }
